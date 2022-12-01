@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-  --primary-color: rgb(0, 0, 0);
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
 }
 
 * {
@@ -11,28 +12,40 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
   font-family: 'Open sans', sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.5rem;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 
 .container {
-  max-width: 14rem;
-  margin: 3rem auto;
-  background: #ffffff;
+  max-width: 20rem;
+  background: #fff;
   padding: 1.25rem;
-  border-radius: 0.8rem;
+  border-radius: 0.6rem;
+  margin: 25vh auto;
 }
 
-span {
-  font-size: 3rem;
-}
-
-form button {
-  border-radius: 0.3rem;
-  background-color: #ffffff;
+button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 1.1rem;
   font-weight: 700;
+  height: 3rem;
   cursor: pointer;
-  margin-top: 1.5rem;
+  width: 4rem;
+  margin-inline: 0.5rem;
+  border-radius: 5rem;
+}
+
+button:hover {
+  background-color: var(--primary-color-darker);
+}
+
+.chronometer {
+  font-size: 3em;
+}
+
+.stoped {
+  color: red
 }
