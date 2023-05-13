@@ -12,7 +12,7 @@ function chronometer() {
   let second = 0;
   let timer;
 
-  function initChronometer() { if (second === 0) {
+  function initChronometer() { if (second >= 0) {
     timer = setInterval(() => {second++;
     chronometer.innerHTML=getHourToSecond(second)}, 1000) }
   }
